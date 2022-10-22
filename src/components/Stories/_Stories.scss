@@ -1,0 +1,40 @@
+.Stories {
+  .StoryCard {
+    background-color: white;
+
+    padding: 30px;
+    margin: 20px auto;
+
+    img {
+      width: 100%;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    h2 {
+      color: $gold-color;
+      padding: 15px;
+    }
+    p {
+      padding: 15px;
+      color: black;
+      line-height: 1.8;
+    }
+  }
+  @media (max-width: 992px) {
+    .StoryCard {
+      width: 100%;
+    }
+  }
+  @media (max-width: 575px) {
+    .StoryCard {
+      margin: 0;
+      text-align: center;
+      padding: 20px 30px;
+      h2,
+      p {
+        padding: 10px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.About {
+  background-color: white;
+  .container {
+    max-width: 1110px;
+  }
+  .ImageBox {
+    background: url("components/About/About.jpg");
+    background-size: contain;
+    height: 650px;
+    &::after {
+      background-color: $gold-color;
+      height: 280px;
+      right: -80px;
+      top: 20%;
+      position: absolute;
+      content: "";
+      width: 80px;
+    }
+  }
+  .TextBox {
+    background-color: $gold-color;
+    color: $dark-color;
+    height: 640px;
+    padding: 30px 10px;
+    .content {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .head {
+      font-size: 44px;
+      font-weight: bolder;
+      padding: 15px 0;
+    }
+    .desc {
+      color: #5e5e5ed4;
+    }
+    .shop {
+      background-color: $dark-color;
+      color: $gold-color;
+      width: 150px;
+      padding: 10px 0;
+      margin: 20px auto;
+      font-size: 19px;
+      cursor: pointer;
+    }
+    &::after {
+      background-color: $dark-color;
+      height: 217px;
+      left: -80px;
+      top: 50%;
+      position: absolute;
+      content: "";
+      width: 80px;
+    }
+  }
+  .TextBox,
+  .ImageBox {
+    margin: 50px auto;
+    position: relative;
+  }
+  @media (max-width: 767px) {
+    .TextBox,
+    .ImageBox {
+      margin: 0;
+      height: 303px;
+    }
+    .TextBox {
+      height: auto;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

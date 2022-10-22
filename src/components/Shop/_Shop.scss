@@ -1,0 +1,136 @@
+.Shop {
+  position: relative;
+  .container {
+    position: relative;
+  }
+  .cat {
+    font-size: 25px;
+    padding: 15px 0;
+  }
+  .searchBox {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    input {
+      height: 50px;
+      border-radius: 0;
+    }
+    i {
+      border: 1px solid #ced4da;
+      border-right-color: transparent;
+      background-color: white;
+      width: 50px;
+      text-align: center;
+      font-size: 23px;
+      padding: 6px 0;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        background-color: $dark-color;
+        color: $gold-color;
+      }
+    }
+  }
+  .selectBox {
+    width: 200px;
+    margin: 10px 0;
+  }
+  .ShopCard {
+    background-color: white;
+    display: flex;
+
+    width: 15%;
+    position: relative;
+    margin: 12px auto;
+    padding: 30px 5px;
+    align-items: center;
+    padding-bottom: 55px;
+    img {
+      width: 70px;
+    }
+  }
+  .title {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 3px;
+    color: black;
+  }
+  .price {
+    color: #888;
+    padding-right: 3px;
+  }
+  .buy {
+    position: absolute;
+    bottom: 0;
+    background-color: $gold-color;
+    width: fit-content;
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+    padding: 3px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  .toCart {
+    position: fixed;
+    bottom: 50px;
+    background-color: $dark-color;
+    width: 40px;
+    height: 7 40px;
+    border-radius: 50%;
+    a {
+      color: $gold-color;
+    }
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    &::before {
+      position: absolute;
+      content: attr(data-length);
+      left: 100%;
+      font-size: 16px;
+      background-color: red;
+      color: white;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+      top: -5px;
+      left: 68%;
+    }
+  }
+  @media (max-width: 992px) {
+    .ShopCard {
+      width: 22%;
+    }
+  }
+  @media (max-width: 767px) {
+    .ShopCard {
+      width: 30%;
+    }
+    .selectBox {
+      width: 95%;
+      margin: auto;
+    }
+    .searchBox {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin: 20px auto;
+      z-index: 1;
+      width: 95%;
+    }
+  }
+  @media (max-width: 575px) {
+    .ShopCard {
+      width: 47%;
+      margin: 6px auto;
+      align-items: unset;
+    }
+  }
+}

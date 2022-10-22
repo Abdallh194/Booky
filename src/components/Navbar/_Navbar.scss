@@ -1,0 +1,218 @@
+.Navbar-Menu {
+  background-color: $dark-color;
+  color: white;
+  position: relative;
+  height: 65px;
+  .logo {
+    display: none;
+    font-size: 40px;
+    .sp1 {
+      background-color: $dark-color;
+      color: $gold-color;
+      padding: 8px;
+    }
+    .sp2 {
+      background-color: $gold-color;
+      color: $dark-color;
+      padding: 8px;
+    }
+  }
+  .menu {
+    display: flex;
+    position: relative;
+    .catigoris {
+      color: $dark-color;
+      height: 66px;
+      cursor: pointer;
+      width: 231px;
+      background-color: $gold-color;
+      margin-top: -11px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 24px;
+      position: relative;
+      .DropedCatigories {
+        position: absolute;
+        z-index: 5;
+        display: none;
+        transition: 0.2s;
+        top: 67px;
+        display: none;
+        width: 100%;
+        padding: 0;
+        background-color: white;
+        font-size: 16px;
+        text-align: right;
+        color: #888;
+        li {
+          border-bottom: 1px solid #8888;
+          padding: 5px 20px;
+          &:hover {
+            background-color: $dark-color;
+            color: white;
+          }
+        }
+      }
+      &:hover {
+        .DropedCatigories {
+          display: block;
+        }
+      }
+    }
+    .dropedBox {
+      display: none;
+      position: absolute;
+      background-color: $gold-color;
+      color: $dark-color;
+      z-index: 5;
+      transition: 0.2s;
+      padding: 12px 0;
+      top: 47px;
+      left: 13px;
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+      a {
+        display: block;
+        color: $dark-color;
+        padding: 3px 0;
+        transition: 0.15s;
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+    .dropedBtn:hover {
+      .dropedBox {
+        display: block;
+      }
+    }
+    li {
+      margin-top: 8px;
+      position: relative;
+    }
+    a {
+      padding: 0px 13px;
+      color: white;
+    }
+  }
+  .BtnDrop-Menu {
+    font-size: 30px;
+    border: 1px solid #b1b1b1;
+    color: #b1b1b1;
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+  }
+
+  .DropedMenu {
+    position: absolute;
+    display: none;
+    z-index: 4;
+    transition: 0.2s;
+    background-color: $dark-color;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    li {
+      padding: 8px 0;
+    }
+    a {
+      color: white;
+    }
+    .dropedBtn {
+      &:hover {
+        .dropedBox {
+          display: block;
+        }
+      }
+    }
+    .dropedBox {
+      position: relative;
+      display: none;
+      left: 0;
+
+      background-color: white;
+      width: 100%;
+      top: 8px;
+      transition: 0.2s;
+      padding: 9px 0;
+      a {
+        color: $dark-color;
+        display: block;
+        padding: 3px 10px;
+      }
+    }
+  }
+  // .BtnDrop-Menu {
+  //   :hover {
+  //     .DropedMenu {
+  //       display: block;
+  //     }
+  //   }
+  // }
+
+  .Icons-box {
+    width: 70px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-top: -23px;
+    font-size: 17px;
+    a {
+      color: white;
+    }
+    .cart-Icon,
+    .fav-icon {
+      position: relative;
+      display: inline-block;
+      color: $gold-color;
+      &::after {
+        position: absolute;
+        content: attr(data-length);
+        width: 18px;
+        height: 18px;
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        border: 1px solid white;
+        right: -21px;
+        top: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: auto;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    height: auto;
+    &:hover {
+      .DropedMenu {
+        display: block;
+      }
+    }
+    .menu,
+    .Icons-box {
+      display: none;
+    }
+    .logo {
+      display: block;
+      .sp1 {
+        background-color: white;
+        color: $dark-color;
+      }
+    }
+    .BtnDrop-Menu {
+      display: flex;
+    }
+  }
+}

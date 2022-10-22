@@ -1,0 +1,78 @@
+footer {
+  background-color: $dark-color;
+  color: white;
+  i {
+    display: block;
+    font-size: 15px;
+    padding: 9px 0;
+  }
+  .info {
+    padding: 5px 0;
+  }
+  .logo {
+    font-size: 35px;
+    .sp1 {
+      background-color: white;
+      color: $dark-color;
+      padding: 8px;
+    }
+    .sp2 {
+      background-color: $gold-color;
+      color: $dark-color;
+      padding: 8px;
+    }
+  }
+  .desc {
+    padding: 15px 0px 15px 20px;
+    color: #c5c5c5;
+  }
+  .head {
+    font-size: 25px;
+  }
+  ul {
+    margin-top: 20px;
+    a {
+      display: block;
+      color: white;
+      transition: 0.2s;
+      &:hover {
+        letter-spacing: 2px;
+        color: $gold-color;
+      }
+    }
+    li {
+      font-size: 18px;
+    }
+  }
+  .footCard {
+    padding: 10px 20px;
+    margin: 50px auto;
+    a {
+      color: white;
+    }
+  }
+  .inpBox {
+    display: flex;
+  }
+  .socials {
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-around;
+    i {
+      font-size: 29px;
+      padding: 0;
+    }
+  }
+  @media (max-width: 992px) {
+    .footCard {
+      width: 45%;
+    }
+  }
+  @media (max-width: 767px) {
+    .footCard {
+      width: 100%;
+      margin: 10px 0;
+      padding: 5px 10px;
+    }
+  }
+}

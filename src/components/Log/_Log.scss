@@ -1,0 +1,28 @@
+.Log {
+  form {
+    margin: 40px auto;
+    width: 70%;
+    background-color: white;
+    padding: 30px 20px;
+    input,
+    button {
+      height: 50px;
+      margin: 20px auto;
+    }
+    .reg {
+      span {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    .logError {
+      color: red;
+      display: none;
+    }
+  }
+  @media (max-width: 992px) {
+    form {
+      width: 100%;
+    }
+  }
+}

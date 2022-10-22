@@ -1,0 +1,125 @@
+header {
+  .rightBox,
+  .leftBox {
+    margin: 50px auto;
+    margin-bottom: 35px;
+    position: relative;
+    color: white;
+    text-align: center;
+    .content {
+      width: 80%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-75%, -50%);
+    }
+    .head {
+      font-size: 35px;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    p {
+      padding: 10px 0;
+      color: #c7c7c7;
+    }
+    a {
+      color: white;
+      border: 1px solid white;
+      width: 150px;
+      padding: 10px 0;
+      display: block;
+      margin: 10px auto;
+      font-size: 19px;
+      transition: 0.1s;
+      &:hover {
+        background-color: white;
+        color: $dark-color;
+      }
+    }
+  }
+  .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .rightBox {
+    background: url("components/Header/header_01.jpg");
+    background-size: cover;
+    height: 450px;
+    width: 65%;
+  }
+  .leftBox {
+    .leftBox-TopBox,
+    .leftBox-BtmBox {
+      width: 100%;
+      position: relative;
+      height: 212.5px;
+      .head {
+        font-size: 25px;
+        padding: 0;
+      }
+      p {
+        color: #e7e7e7;
+      }
+      a {
+        background-color: $gold-color;
+        color: $dark-color;
+        font-size: unset;
+        border-color: $gold-color;
+        width: 110px;
+        &:hover {
+          background-color: transparent;
+          color: $gold-color;
+        }
+      }
+    }
+    .leftBox-TopBox {
+      background: url("components/Header/header_02.jpg");
+      background-size: cover;
+      background-position-y: 85%;
+      margin-bottom: 25px;
+    }
+    .leftBox-BtmBox {
+      background: url("components/Header/header_03.jpg");
+      background-size: cover;
+      background-position-y: 70%;
+    }
+  }
+  .featuers {
+    margin: 0px 25px;
+  }
+  .featBox {
+    width: 23%;
+    background-color: white;
+    color: $dark-color;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px 0;
+    text-align: center;
+  }
+  @media (max-width: 992px) {
+    .rightBox,
+    .leftBox {
+      width: 95%;
+      margin: auto;
+      margin-top: 20px;
+    }
+    .rightBox {
+      margin-top: 40px;
+      background-position-x: 22%;
+    }
+    .leftBox {
+      padding: 0;
+    }
+    .featuers {
+      margin: 0;
+    }
+    .featBox {
+      width: 95%;
+      margin: 10px auto;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.Contact {
+  .mapGogle {
+    width: 100%;
+    height: 300px;
+  }
+  .form-Box {
+    background-color: white;
+    padding: 30px;
+  }
+  form {
+    input {
+      height: 50px;
+      margin: 20px auto;
+    }
+    textarea {
+      height: 150px;
+      resize: none;
+    }
+  }
+  .MapDesc {
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+  }
+  .Details {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    i {
+      padding: 10px 0;
+      display: block;
+    }
+  }
+}
