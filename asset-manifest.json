@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Booky/static/css/main.0bd15c2f.css",
-    "main.js": "/Booky/static/js/main.ef6bfcfa.js",
-    "static/media/About.jpg": "/Booky/static/media/About.1f18b2eb79c3994046cf.jpg",
-    "static/media/header_01.jpg": "/Booky/static/media/header_01.66c234775b0f07701336.jpg",
-    "static/media/header_02.jpg": "/Booky/static/media/header_02.b9c3068ce0f4c62f3bcc.jpg",
-    "static/media/header_03.jpg": "/Booky/static/media/header_03.d232b346c55a89e03908.jpg",
-    "index.html": "/Booky/index.html",
-    "main.0bd15c2f.css.map": "/Booky/static/css/main.0bd15c2f.css.map",
-    "main.ef6bfcfa.js.map": "/Booky/static/js/main.ef6bfcfa.js.map"
+    "main.css": "/ASR/static/css/main.445e3acf.css",
+    "main.js": "/ASR/static/js/main.dd01e654.js",
+    "static/media/About.jpg": "/ASR/static/media/About.1f18b2eb79c3994046cf.jpg",
+    "static/media/header_01.jpg": "/ASR/static/media/header_01.66c234775b0f07701336.jpg",
+    "static/media/header_02.jpg": "/ASR/static/media/header_02.b9c3068ce0f4c62f3bcc.jpg",
+    "static/media/header_03.jpg": "/ASR/static/media/header_03.d232b346c55a89e03908.jpg",
+    "index.html": "/ASR/index.html",
+    "main.445e3acf.css.map": "/ASR/static/css/main.445e3acf.css.map",
+    "main.dd01e654.js.map": "/ASR/static/js/main.dd01e654.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bd15c2f.css",
-    "static/js/main.ef6bfcfa.js"
+    "static/css/main.445e3acf.css",
+    "static/js/main.dd01e654.js"
   ]
 }
